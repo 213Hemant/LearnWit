@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Document</title>
+
+</head>
+<body>
+    <div class="contain">
+        <form action="" class="form1">
+        <h1 id="heading">Login to LearnWit ╰(*°▽°*)╯</h1>
+        <div id="ele">
+        <p class="items">*Name: <input type="text" name="Name" id="Name" required></p>
+        <fieldset><legend>*Gender</legend>
+            <p><input type="radio" name="gender" id="gender">Male <br><input type="radio" name="gender" id="gender">Female <br><input type="radio" name="gender" id="gender">Other</p>
+        </fieldset>
+        <p class="items">*Mobile NO: <input type="tel" name="mobile" id="mobile" required></p>
+        <p class="items">*Email: <input type="email" name="email" id="email" required></p>
+        <p class="items">*Birth date: <input type="date" name="dob" id="dob" required></p>
+        <p class="items">*Qualification<select name="Qualification" id="Qualification" required>
+            <option value="">Select your qualification</option>
+            <option value="10th">10th</option>
+            <option value="12th/Diploma">12th/Diploma</option>
+            <option value="Undergraguate">Undergraguate</option>
+            <option value="graguate">graduate</option>
+        </select>
+        </p>
+        <p class="items">*Username: <input type="text" name="username" id="username" required></p>
+        <p class="items">*Password: <input type="password" name="password" id="password" required></p>
+        <p class="items">*Confirm password: <input type="password" name="confirmpassword" id="confirmpassword" required onkeyup="checkPassword()"></p>
+        <p id="message" style="color: red;"></p>
+        <input type="Submit" value="Submit" >
+    </div>
+    </form>
+</div>
+<script>
+    function checkPassword() {
+        let password = document.getElementById("password").value;
+        let confirmPassword = document.getElementById("confirmPassword").value;
+
+        if (password !== confirmPassword) {
+            document.getElementById("message").innerHTML = "Passwords do not match!";
+        } else {
+            document.getElementById("message").innerHTML =` <a href="level.html" class="quizz">Quizz</a>`;
+        }
+    }
+</script>
+
+</body>
+</html>

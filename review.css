@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/* Reset some default styles */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the whole page */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the review page container */
+.reviewpage {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Style the review heading */
+h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+/* Style the review radio buttons and labels */
+/* input[type="radio"] {
+    display:;
+} */
+
+.review {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 2px solid #333;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.review + label {
+    font-size: 40px;
+    color: #333;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+/* Style the review buttons container */
+.reviewbtn {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style the submit button */
+.button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#submit {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Change button color on hover */
+#submit:hover {
+    background-color: #555;
+}

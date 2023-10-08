@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+/* Reset some default styles */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a background color for the whole page */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the level container */
+.level {
+    display: flex ;
+    justify-content: center;
+    text-align: center;
+    margin-top: 50px;
+}
+.lvl{
+
+}
+/* Style the heading */
+.level h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Style the level buttons */
+.level a {
+    text-decoration: none;
+}
+
+.level button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+/* Style individual level buttons */
+.level1 {
+    background-color: #333;
+}
+
+.level2 {
+    background-color: #555;
+}
+
+.level3 {
+    background-color: #777;
+}
+
+/* Change button color on hover */
+.level button:hover {
+    background-color: #444;
+}
+h1{
+    text-align: center;
+    /* margin-top: 20px; */
+    padding-top: 50px;
+}
